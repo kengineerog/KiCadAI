@@ -1,0 +1,10 @@
+(symbol "ATmega328P"
+  (property "Reference" "U" (at 0 0 0))
+  (property "Value" "ATmega328P" (at 0 -2.54 0))
+  (property "Footprint" "ATmega328P" (at 0 0 0))
+  (property "Datasheet" "" (at 0 0 0))
+  (symbol "ATmega328P_0_1"
+    (rectangle (start 0 0) (end 10 -30) (stroke (width 0.254)) (fill (type background))))
+  (symbol "ATmega328P_1_1"
+  )
+)

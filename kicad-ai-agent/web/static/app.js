@@ -50,7 +50,10 @@ async function loadModels() {
     if (!response.ok) throw new Error("Model catalog unavailable");
     return response.json();
   });
-  $("model").innerHTML = models.map((model) => `<option value="${escapeHtml(model.id)}">${escapeHtml(model.label)} · ${escapeHtml(model.provider)}</option>`).join("");
+  if (!models.length) throw new Error("No models are configured");
+  $("model").innerHTML = models.map((model) => `<option value="${escapeHtml(model.id)}">${escapeHtml(model.id)} · ${escapeHtml(model.provider || "Omniroute")}</option>`).join("");
+  const preferred = models.find((model) => model.id.toLowerCase() === "auto/nemotron") || models.find((model) => /nemotron/i.test(model.id));
+  if (preferred) $("model").value = preferred.id;
 }
 
 async function refreshSession() {
@@ -117,6 +120,9 @@ async function run() {
   }
 }
 
-loadModels().catch((error) => addLog({type:"error", message: error.message, data:{}}));
+loadModels().catch((error) => {
+  $("model").innerHTML = `<option value="">Model catalog unavailable</option>`;
+  addLog({type:"error", message: error.message, data:{}});
+});
 $("run").addEventListener("click", run);
 $("goal").addEventListener("keydown", (event) => { if ((event.ctrlKey || event.metaKey) && event.key === "Enter") run(); });
