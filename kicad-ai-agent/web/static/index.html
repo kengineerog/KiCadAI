@@ -24,8 +24,6 @@
   <link rel="stylesheet" href="/static/style.css">
 </head>
 <body class="min-h-screen bg-[#111311] text-[#e7ebe2] antialiased">
-  <div class="ambient ambient-a"></div>
-  <div class="ambient ambient-b"></div>
   <div class="shell relative mx-auto max-w-[1540px] px-4 py-4 sm:px-6 lg:px-8">
     <header class="topbar flex flex-col gap-4 border-b border-[#2c332e] pb-4 sm:flex-row sm:items-center sm:justify-between">
       <div class="flex items-center gap-3">
@@ -42,11 +40,11 @@
       </div>
     </header>
 
-    <section class="hero grid gap-8 py-10 lg:grid-cols-[1fr_auto] lg:items-end lg:py-16">
+    <section class="hero grid gap-8 py-8 lg:grid-cols-[1fr_auto] lg:items-end lg:py-12">
       <div>
         <div class="font-mono text-[10px] uppercase tracking-[.2em] text-[#b6d65a]">Mission console / live build surface</div>
-        <h2 class="mt-4 max-w-4xl text-4xl font-semibold leading-[.98] tracking-[-.06em] text-[#f0f2e9] sm:text-6xl lg:text-7xl">From intent to<br><span class="text-[#d8f56a]">board reality.</span></h2>
-        <p class="mt-5 max-w-xl text-sm leading-6 text-[#9da89f] sm:text-base">Research components, synthesize KiCad libraries, and keep every tool call visible while the agent works.</p>
+        <h2 class="mt-4 max-w-4xl text-4xl font-semibold leading-[1.02] tracking-[-.05em] text-[#f0f2e9] sm:text-6xl lg:text-7xl">From intent to<br><span class="text-[#d8f56a]">board reality.</span></h2>
+        <p class="mt-5 max-w-xl text-sm leading-6 text-[#9da89f] sm:text-base">A visible execution surface for component research, library synthesis, and project operations.</p>
       </div>
       <div class="hidden border-l border-[#899f45] pl-5 lg:block">
         <div class="font-mono text-[10px] uppercase tracking-[.16em] text-[#89948a]">Discoverable operations</div>
@@ -81,7 +79,7 @@
             <textarea id="goal" class="mt-2 min-h-[132px]">Research RK3566 and generate a KiCad symbol, footprint, evidence record, and project library.</textarea>
           </div>
           <div class="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center">
-            <button id="run" class="primary-button inline-flex items-center justify-center gap-3"><span class="button-sigil">↗</span><span>Run agent</span><span class="ml-auto font-mono text-[10px] opacity-60">EXECUTE</span></button>
+            <button id="run" class="primary-button inline-flex items-center justify-center gap-3"><span class="button-sigil" aria-hidden="true">→</span><span>Run agent</span><span class="ml-auto font-mono text-[10px] opacity-60">EXECUTE</span></button>
             <p id="session" class="font-mono text-[10px] uppercase tracking-[.12em] text-[#68756b]">Session / initializing</p>
           </div>
         </section>
@@ -92,7 +90,7 @@
             <div class="flex items-center gap-3"><span id="event-count" class="font-mono text-[10px] uppercase tracking-[.13em] text-[#68756b]">0 events</span><span id="run-state" class="state-chip">Standby</span></div>
           </div>
           <div id="log" class="log" aria-live="polite">
-            <div class="empty-state"><div class="empty-icon">⌁</div><div class="font-medium text-[#b4beb5]">Awaiting mission parameters</div><div class="mt-1 text-[#68756b]">Research, synthesis, and project events will appear here.</div></div>
+            <div class="empty-state"><div class="empty-icon" aria-hidden="true">+</div><div class="font-medium text-[#b4beb5]">Awaiting mission parameters</div><div class="mt-1 text-[#68756b]">Research, synthesis, and project events will appear here.</div></div>
           </div>
         </section>
       </div>

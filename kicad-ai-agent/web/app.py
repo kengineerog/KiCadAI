@@ -43,12 +43,25 @@ async def configured_models() -> list[ModelInfo]:
     if key:
         try:
             async with httpx.AsyncClient(timeout=8) as client:
-                response = await client.get(f"{base_url}/models", headers={"Authorization": f"Bearer {key}"})
+                response = await client.get(
+                    f"{base_url}/models",
+                    headers={"Authorization": f"Bearer {key}"},
+                )
                 response.raise_for_status()
                 payload = response.json()
                 items = payload.get("data", payload.get("models", []))
-                if items:
-                    return [ModelInfo(id=item.get("id", item.get("name", "unknown")), label=item.get("name", item.get("id", "unknown")), provider="Omniroute") for item in items]
+                models: list[ModelInfo] = []
+                for item in items:
+                    if isinstance(item, str):
+                        models.append(ModelInfo(id=item, label=item, provider="Omniroute"))
+                        continue
+                    model_id = item.get("id") or item.get("name")
+                    if not model_id:
+                        continue
+                    provider = item.get("provider") or item.get("owned_by") or item.get("owner") or "Omniroute"
+                    models.append(ModelInfo(id=model_id, label=item.get("name") or model_id, provider=str(provider)))
+                if models:
+                    return models
         except Exception as exc:
             logger.warning("Omniroute model listing unavailable: %s", exc)
 

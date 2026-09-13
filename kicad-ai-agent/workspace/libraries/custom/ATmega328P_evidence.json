@@ -1,0 +1,15 @@
+{
+  "component": "ATmega328P",
+  "generated_at": "2026-09-12T18:47:03.284031",
+  "generation_confidence": 0.9,
+  "sources": [
+    "https://example.com/datasheets/atmega328p.pdf"
+  ],
+  "pinout_source": "datasheet extraction",
+  "pinout_pins": 0,
+  "package_data_source": "datasheet extraction",
+  "package": "FCBGA419",
+  "symbol_file": "ATmega328P.kicad_sym",
+  "footprint_file": "ATmega328P.kicad_mod",
+  "validation_status": "pending"
+}
