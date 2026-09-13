@@ -1,0 +1,756 @@
+[
+  {
+    "name": "simulation.run_transient",
+    "description": "Performs simulation run_transient for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.run_ac",
+    "description": "Performs simulation run_ac for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.run_dc_sweep",
+    "description": "Performs simulation run_dc_sweep for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.run_operating_point",
+    "description": "Performs simulation run_operating_point for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.add_probe",
+    "description": "Performs simulation add_probe for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.get_waveform",
+    "description": "Performs simulation get_waveform for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.measure",
+    "description": "Performs simulation measure for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.attach_ibis_model",
+    "description": "Performs simulation attach_ibis_model for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.run_ibis_simulation",
+    "description": "Performs simulation run_ibis_simulation for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.compare_waveforms",
+    "description": "Performs simulation compare_waveforms for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.get_peak_voltage",
+    "description": "Performs simulation get_peak_voltage for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.get_settling_time",
+    "description": "Performs simulation get_settling_time for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.get_overshoot",
+    "description": "Performs simulation get_overshoot for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.get_undershoot",
+    "description": "Performs simulation get_undershoot for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.check_timing",
+    "description": "Performs simulation check_timing for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.export_waveform",
+    "description": "Performs simulation export_waveform for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.plot_waveform",
+    "description": "Performs simulation plot_waveform for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.run_noise_analysis",
+    "description": "Performs simulation run_noise_analysis for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.run_s_parameter",
+    "description": "Performs simulation run_s_parameter for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.run_eye_diagram",
+    "description": "Performs simulation run_eye_diagram for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.get_signal_delay",
+    "description": "Performs simulation get_signal_delay for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.get_jitter",
+    "description": "Performs simulation get_jitter for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.validate_termination",
+    "description": "Performs simulation validate_termination for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.run_thermal_sim",
+    "description": "Performs simulation run_thermal_sim for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.get_temperature_profile",
+    "description": "Performs simulation get_temperature_profile for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "simulation.match_termination_network",
+    "description": "Performs simulation match_termination_network for the KiCad design workflow.",
+    "category": "simulation",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  }
+]

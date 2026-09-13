@@ -1,0 +1,2351 @@
+[
+  {
+    "name": "library.create_library",
+    "description": "Performs library create_library for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.delete_library",
+    "description": "Performs library delete_library for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.get_library_info",
+    "description": "Performs library get_library_info for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.list_libraries",
+    "description": "Performs library list_libraries for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.set_library_path",
+    "description": "Performs library set_library_path for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.add_to_project_library",
+    "description": "Performs library add_to_project_library for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.remove_from_project_library",
+    "description": "Performs library remove_from_project_library for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.create_symbol",
+    "description": "Performs library create_symbol for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.delete_symbol",
+    "description": "Performs library delete_symbol for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.add_pin",
+    "description": "Performs library add_pin for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.remove_pin",
+    "description": "Performs library remove_pin for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.get_symbol",
+    "description": "Performs library get_symbol for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.search_symbol",
+    "description": "Performs library search_symbol for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.list_library",
+    "description": "Performs library list_library for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.download_symbol",
+    "description": "Performs library download_symbol for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.import_symbol",
+    "description": "Performs library import_symbol for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.validate_symbol",
+    "description": "Performs library validate_symbol for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.create_footprint",
+    "description": "Performs library create_footprint for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.delete_footprint",
+    "description": "Performs library delete_footprint for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.add_pad_to_footprint",
+    "description": "Performs library add_pad_to_footprint for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.set_footprint_courtyard",
+    "description": "Performs library set_footprint_courtyard for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.set_footprint_keepout",
+    "description": "Performs library set_footprint_keepout for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.get_footprint",
+    "description": "Performs library get_footprint for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.search_footprint",
+    "description": "Performs library search_footprint for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.download_footprint",
+    "description": "Performs library download_footprint for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.import_footprint",
+    "description": "Performs library import_footprint for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.validate_footprint",
+    "description": "Performs library validate_footprint for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.attach_3d_model",
+    "description": "Performs library attach_3d_model for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.download_3d_model",
+    "description": "Performs library download_3d_model for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.convert_3d_format",
+    "description": "Performs library convert_3d_format for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.set_symbol_pin_name",
+    "description": "Performs library set_symbol_pin_name for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.set_symbol_pin_number",
+    "description": "Performs library set_symbol_pin_number for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.set_symbol_pin_type",
+    "description": "Performs library set_symbol_pin_type for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.rename_symbol",
+    "description": "Performs library rename_symbol for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.copy_symbol",
+    "description": "Performs library copy_symbol for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.merge_symbol",
+    "description": "Performs library merge_symbol for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.rotate_symbol_pin",
+    "description": "Performs library rotate_symbol_pin for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.create_symbol_template",
+    "description": "Performs library create_symbol_template for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.create_footprint_template",
+    "description": "Performs library create_footprint_template for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.set_footprint_origin",
+    "description": "Performs library set_footprint_origin for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.set_footprint_pad_spacing",
+    "description": "Performs library set_footprint_pad_spacing for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.set_footprint_pad_offset",
+    "description": "Performs library set_footprint_pad_offset for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.add_3d_shape",
+    "description": "Performs library add_3d_shape for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.remove_3d_shape",
+    "description": "Performs library remove_3d_shape for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.assign_3d_model_rotation",
+    "description": "Performs library assign_3d_model_rotation for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.assign_3d_model_scale",
+    "description": "Performs library assign_3d_model_scale for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.export_library",
+    "description": "Performs library export_library for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.import_library",
+    "description": "Performs library import_library for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.cache_library",
+    "description": "Performs library cache_library for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.refresh_library",
+    "description": "Performs library refresh_library for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.get_symbol_pin_count",
+    "description": "Performs library get_symbol_pin_count for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.get_footprint_pad_count",
+    "description": "Performs library get_footprint_pad_count for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.set_symbol_text_size",
+    "description": "Performs library set_symbol_text_size for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.set_footprint_text_size",
+    "description": "Performs library set_footprint_text_size for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.match_library_part",
+    "description": "Performs library match_library_part for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.index_library",
+    "description": "Performs library index_library for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.search_by_keyword",
+    "description": "Performs library search_by_keyword for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.filter_by_package",
+    "description": "Performs library filter_by_package for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.filter_by_manufacturer",
+    "description": "Performs library filter_by_manufacturer for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.preview_symbol",
+    "description": "Performs library preview_symbol for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.preview_footprint",
+    "description": "Performs library preview_footprint for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.lock_library_entry",
+    "description": "Performs library lock_library_entry for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.unlock_library_entry",
+    "description": "Performs library unlock_library_entry for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.build_library_index",
+    "description": "Performs library build_library_index for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.create_library_group",
+    "description": "Performs library create_library_group for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.delete_library_group",
+    "description": "Performs library delete_library_group for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.get_library_group",
+    "description": "Performs library get_library_group for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.list_library_groups",
+    "description": "Performs library list_library_groups for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.set_default_library",
+    "description": "Performs library set_default_library for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.add_library_alias",
+    "description": "Performs library add_library_alias for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.remove_library_alias",
+    "description": "Performs library remove_library_alias for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.link_library_to_project",
+    "description": "Performs library link_library_to_project for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.unlink_library_from_project",
+    "description": "Performs library unlink_library_from_project for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.get_symbol_hash",
+    "description": "Performs library get_symbol_hash for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.get_footprint_hash",
+    "description": "Performs library get_footprint_hash for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.set_symbol_reference_style",
+    "description": "Performs library set_symbol_reference_style for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.set_footprint_reference_style",
+    "description": "Performs library set_footprint_reference_style for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.generate_symbol_from_csv",
+    "description": "Performs library generate_symbol_from_csv for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.generate_footprint_from_csv",
+    "description": "Performs library generate_footprint_from_csv for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.import_part_data",
+    "description": "Performs library import_part_data for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "library.export_part_data",
+    "description": "Performs library export_part_data for the KiCad design workflow.",
+    "category": "library",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  }
+]

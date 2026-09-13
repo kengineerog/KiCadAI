@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KiCad AI // Control Room</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="scanline"></div>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">K</span><div><p class="eyebrow">AUTONOMOUS PCB SYSTEMS</p><h1>KICAD AI <span>// CONTROL ROOM</span></h1></div></div>
+      <div class="connection"><span class="dot"></span><span id="health">SYSTEM READY</span><span class="mono">v0.5</span></div>
+    </header>
+    <section class="hero">
+      <div><p class="eyebrow amber">MISSION CONSOLE / PHASE 05</p><h2>Turn intent into<br><em>board reality.</em></h2><p class="lede">Research components, synthesize libraries, and drive KiCad from one live execution surface.</p></div>
+      <div class="hero-stat"><span class="mono">TOOLS ONLINE</span><strong>541</strong><span>DISCOVERABLE OPERATIONS</span></div>
+    </section>
+    <section class="workspace-grid">
+      <div class="panel mission">
+        <div class="panel-head"><span class="panel-kicker">01 / MISSION INPUT</span><span class="live-chip">LIVE AGENT</span></div>
+        <label for="model">MODEL ROUTE</label><select id="model"></select>
+        <div class="row"><div><label for="temperature">TEMPERATURE</label><input id="temperature" type="number" min="0" max="2" step="0.1" value="0.3"></div><div><label for="project">PROJECT ID</label><input id="project" placeholder="auto-generated"></div></div>
+        <label for="goal">HIGH-LEVEL GOAL</label>
+        <textarea id="goal">Research RK3566 and generate a KiCad symbol, footprint, evidence record, and project library.</textarea>
+        <button id="run"><span class="button-sigil">↗</span> RUN AGENT <span class="shortcut">CTRL ↵</span></button>
+        <p id="session" class="session-line">SESSION // initializing</p>
+      </div>
+      <div class="panel telemetry">
+        <div class="panel-head"><span class="panel-kicker">02 / TELEMETRY</span><span id="run-state" class="state">STANDBY</span></div>
+        <div id="log" class="log" aria-live="polite"><div class="empty-log">Awaiting mission parameters<span>Execution events will appear here in real time.</span></div></div>
+      </div>
+      <aside class="rail">
+        <div class="panel status-card"><div class="panel-head"><span class="panel-kicker">03 / KICAD LINK</span><span id="kicad-dot" class="status-dot"></span></div><div id="kicad-status" class="big-status">NOT CONNECTED</div><div class="metric"><span>PROJECT</span><strong id="current-project">—</strong></div><div class="metric"><span>FOOTPRINTS</span><strong id="footprints">0</strong></div><div class="metric"><span>TRACKS / NETS</span><strong><span id="tracks">0</span> / <span id="nets">0</span></strong></div></div>
+        <div class="panel artifacts"><div class="panel-head"><span class="panel-kicker">04 / ARTIFACTS</span><span id="artifact-count">0 FILES</span></div><div id="artifact-list" class="artifact-list"><div class="empty-log">No artifacts yet<span>Generated files will be indexed here.</span></div></div></div>
+      </aside>
+    </section>
+    <footer><span>OMNIROUTE / OPENAI COMPATIBLE</span><span>RESEARCH → SYNTHESIS → FABRICATION</span><span class="mono">LOCAL SESSION ENCRYPTION: OFFLINE</span></footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

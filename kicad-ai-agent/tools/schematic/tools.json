@@ -1,0 +1,2757 @@
+[
+  {
+    "name": "schematic.create_project",
+    "description": "Performs schematic create_project for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.open_project",
+    "description": "Performs schematic open_project for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.save_project",
+    "description": "Performs schematic save_project for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.close_project",
+    "description": "Performs schematic close_project for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.get_project_info",
+    "description": "Performs schematic get_project_info for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.add_symbol",
+    "description": "Performs schematic add_symbol for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.remove_symbol",
+    "description": "Performs schematic remove_symbol for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.move_symbol",
+    "description": "Performs schematic move_symbol for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.rotate_symbol",
+    "description": "Performs schematic rotate_symbol for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.get_symbol",
+    "description": "Performs schematic get_symbol for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.get_symbols",
+    "description": "Performs schematic get_symbols for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.assign_value",
+    "description": "Performs schematic assign_value for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.set_symbol_property",
+    "description": "Performs schematic set_symbol_property for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.connect_pins",
+    "description": "Performs schematic connect_pins for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.disconnect_pins",
+    "description": "Performs schematic disconnect_pins for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.add_wire",
+    "description": "Performs schematic add_wire for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.remove_wire",
+    "description": "Performs schematic remove_wire for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.add_junction",
+    "description": "Performs schematic add_junction for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.add_label",
+    "description": "Performs schematic add_label for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.remove_label",
+    "description": "Performs schematic remove_label for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.add_power_symbol",
+    "description": "Performs schematic add_power_symbol for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.add_ground_symbol",
+    "description": "Performs schematic add_ground_symbol for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.rename_net",
+    "description": "Performs schematic rename_net for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.get_nets",
+    "description": "Performs schematic get_nets for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.add_hierarchical_sheet",
+    "description": "Performs schematic add_hierarchical_sheet for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.create_subsheet",
+    "description": "Performs schematic create_subsheet for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.add_sheet_pin",
+    "description": "Performs schematic add_sheet_pin for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.add_text",
+    "description": "Performs schematic add_text for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.add_comment",
+    "description": "Performs schematic add_comment for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.add_dimension",
+    "description": "Performs schematic add_dimension for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.check_connectivity",
+    "description": "Performs schematic check_connectivity for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.check_unconnected_pins",
+    "description": "Performs schematic check_unconnected_pins for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.check_missing_values",
+    "description": "Performs schematic check_missing_values for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.check_missing_footprints",
+    "description": "Performs schematic check_missing_footprints for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.set_grid_size",
+    "description": "Performs schematic set_grid_size for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.set_grid_style",
+    "description": "Performs schematic set_grid_style for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.zoom_to_fit",
+    "description": "Performs schematic zoom_to_fit for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.zoom_in",
+    "description": "Performs schematic zoom_in for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.zoom_out",
+    "description": "Performs schematic zoom_out for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.select_object",
+    "description": "Performs schematic select_object for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.clear_selection",
+    "description": "Performs schematic clear_selection for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.copy_object",
+    "description": "Performs schematic copy_object for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.paste_object",
+    "description": "Performs schematic paste_object for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.cut_object",
+    "description": "Performs schematic cut_object for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.undo",
+    "description": "Performs schematic undo for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.redo",
+    "description": "Performs schematic redo for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.export_pdf",
+    "description": "Performs schematic export_pdf for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.export_svg",
+    "description": "Performs schematic export_svg for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.format_text",
+    "description": "Performs schematic format_text for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.set_text_font",
+    "description": "Performs schematic set_text_font for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.set_text_size",
+    "description": "Performs schematic set_text_size for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.align_objects",
+    "description": "Performs schematic align_objects for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.distribute_objects",
+    "description": "Performs schematic distribute_objects for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.set_net_class",
+    "description": "Performs schematic set_net_class for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.set_bus_label",
+    "description": "Performs schematic set_bus_label for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.add_bus",
+    "description": "Performs schematic add_bus for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.remove_bus",
+    "description": "Performs schematic remove_bus for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.add_bus_entry",
+    "description": "Performs schematic add_bus_entry for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.remove_bus_entry",
+    "description": "Performs schematic remove_bus_entry for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.add_no_connect",
+    "description": "Performs schematic add_no_connect for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.remove_no_connect",
+    "description": "Performs schematic remove_no_connect for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.get_no_connects",
+    "description": "Performs schematic get_no_connects for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.toggle_hidden_pin",
+    "description": "Performs schematic toggle_hidden_pin for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.show_hidden_pin",
+    "description": "Performs schematic show_hidden_pin for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.hide_hidden_pin",
+    "description": "Performs schematic hide_hidden_pin for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.add_global_label",
+    "description": "Performs schematic add_global_label for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.remove_global_label",
+    "description": "Performs schematic remove_global_label for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.add_sheet_symbol",
+    "description": "Performs schematic add_sheet_symbol for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.remove_sheet_symbol",
+    "description": "Performs schematic remove_sheet_symbol for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.set_reference_designator",
+    "description": "Performs schematic set_reference_designator for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.set_component_value",
+    "description": "Performs schematic set_component_value for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.set_component_footprint",
+    "description": "Performs schematic set_component_footprint for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.set_component_library",
+    "description": "Performs schematic set_component_library for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.get_component_property",
+    "description": "Performs schematic get_component_property for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.set_component_property",
+    "description": "Performs schematic set_component_property for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.add_net_tie",
+    "description": "Performs schematic add_net_tie for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.remove_net_tie",
+    "description": "Performs schematic remove_net_tie for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.add_anchor",
+    "description": "Performs schematic add_anchor for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.remove_anchor",
+    "description": "Performs schematic remove_anchor for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.add_marker",
+    "description": "Performs schematic add_marker for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.remove_marker",
+    "description": "Performs schematic remove_marker for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.trace_net",
+    "description": "Performs schematic trace_net for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.check_duplicate_references",
+    "description": "Performs schematic check_duplicate_references for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.generate_bom",
+    "description": "Performs schematic generate_bom for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.import_netlist",
+    "description": "Performs schematic import_netlist for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.export_netlist",
+    "description": "Performs schematic export_netlist for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.check_pin_mapping",
+    "description": "Performs schematic check_pin_mapping for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.auto_annotate",
+    "description": "Performs schematic auto_annotate for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.run_erc",
+    "description": "Performs schematic run_erc for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.lock_symbol",
+    "description": "Performs schematic lock_symbol for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.unlock_symbol",
+    "description": "Performs schematic unlock_symbol for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.group_symbols",
+    "description": "Performs schematic group_symbols for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.ungroup_symbols",
+    "description": "Performs schematic ungroup_symbols for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.toggle_ratsnest",
+    "description": "Performs schematic toggle_ratsnest for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "schematic.set_snap_grid",
+    "description": "Performs schematic set_snap_grid for the KiCad design workflow.",
+    "category": "schematic",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  }
+]

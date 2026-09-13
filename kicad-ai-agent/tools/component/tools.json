@@ -1,0 +1,1394 @@
+[
+  {
+    "name": "component.search",
+    "description": "Performs component search for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.search_by_package",
+    "description": "Performs component search_by_package for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.search_by_manufacturer",
+    "description": "Performs component search_by_manufacturer for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.search_by_category",
+    "description": "Performs component search_by_category for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.find_alternative",
+    "description": "Performs component find_alternative for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.get_datasheet_url",
+    "description": "Performs component get_datasheet_url for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.create_from_datasheet",
+    "description": "Performs component create_from_datasheet for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.extract_pinout",
+    "description": "Performs component extract_pinout for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.extract_package_data",
+    "description": "Performs component extract_package_data for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.generate_symbol",
+    "description": "Performs component generate_symbol for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.generate_footprint",
+    "description": "Performs component generate_footprint for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.validate_component",
+    "description": "Performs component validate_component for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.get_component_specs",
+    "description": "Performs component get_component_specs for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.get_component_value",
+    "description": "Performs component get_component_value for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.set_component_value",
+    "description": "Performs component set_component_value for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.get_thermal_properties",
+    "description": "Performs component get_thermal_properties for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.get_electrical_properties",
+    "description": "Performs component get_electrical_properties for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.create_evidence_record",
+    "description": "Performs component create_evidence_record for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.get_evidence_record",
+    "description": "Performs component get_evidence_record for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.update_evidence",
+    "description": "Performs component update_evidence for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.get_replacement_options",
+    "description": "Performs component get_replacement_options for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.check_stock",
+    "description": "Performs component check_stock for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.check_lead_time",
+    "description": "Performs component check_lead_time for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.get_supplier_data",
+    "description": "Performs component get_supplier_data for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.compare_components",
+    "description": "Performs component compare_components for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.score_component_fit",
+    "description": "Performs component score_component_fit for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.check_package_compatibility",
+    "description": "Performs component check_package_compatibility for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.get_footprint_recommendation",
+    "description": "Performs component get_footprint_recommendation for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.lookup_pin_function",
+    "description": "Performs component lookup_pin_function for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.lookup_package_dimensions",
+    "description": "Performs component lookup_package_dimensions for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.lookup_power_rating",
+    "description": "Performs component lookup_power_rating for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.lookup_voltage_rating",
+    "description": "Performs component lookup_voltage_rating for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.lookup_temperature_range",
+    "description": "Performs component lookup_temperature_range for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.lookup_manufacturer",
+    "description": "Performs component lookup_manufacturer for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.lookup_datasheet",
+    "description": "Performs component lookup_datasheet for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.lookup_reference_designator",
+    "description": "Performs component lookup_reference_designator for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.lookup_approval_status",
+    "description": "Performs component lookup_approval_status for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.lookup_faq",
+    "description": "Performs component lookup_faq for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.get_mouser_url",
+    "description": "Performs component get_mouser_url for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.get_digikey_url",
+    "description": "Performs component get_digikey_url for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.get_octopart_url",
+    "description": "Performs component get_octopart_url for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.filter_by_voltage",
+    "description": "Performs component filter_by_voltage for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.filter_by_current",
+    "description": "Performs component filter_by_current for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.filter_by_frequency",
+    "description": "Performs component filter_by_frequency for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.filter_by_package",
+    "description": "Performs component filter_by_package for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.get_alternative_footprints",
+    "description": "Performs component get_alternative_footprints for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.get_mirror_variant",
+    "description": "Performs component get_mirror_variant for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "component.get_rohs_status",
+    "description": "Performs component get_rohs_status for the KiCad design workflow.",
+    "category": "component",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  }
+]

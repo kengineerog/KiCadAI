@@ -1,0 +1,4700 @@
+[
+  {
+    "name": "pcb.create_board",
+    "description": "Performs pcb create_board for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.open_board",
+    "description": "Performs pcb open_board for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.save_board",
+    "description": "Performs pcb save_board for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_board_info",
+    "description": "Performs pcb get_board_info for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_board_size",
+    "description": "Performs pcb set_board_size for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_stackup",
+    "description": "Performs pcb set_stackup for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_stackup",
+    "description": "Performs pcb get_stackup for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_footprint",
+    "description": "Performs pcb add_footprint for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.remove_footprint",
+    "description": "Performs pcb remove_footprint for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.move_footprint",
+    "description": "Performs pcb move_footprint for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.rotate_footprint",
+    "description": "Performs pcb rotate_footprint for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.flip_footprint",
+    "description": "Performs pcb flip_footprint for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.lock_footprint",
+    "description": "Performs pcb lock_footprint for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.unlock_footprint",
+    "description": "Performs pcb unlock_footprint for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_footprint",
+    "description": "Performs pcb get_footprint for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_footprints",
+    "description": "Performs pcb get_footprints for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_footprint_property",
+    "description": "Performs pcb get_footprint_property for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_footprint_property",
+    "description": "Performs pcb set_footprint_property for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_pad",
+    "description": "Performs pcb add_pad for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.remove_pad",
+    "description": "Performs pcb remove_pad for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.move_pad",
+    "description": "Performs pcb move_pad for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_pad_size",
+    "description": "Performs pcb set_pad_size for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_pad_shape",
+    "description": "Performs pcb set_pad_shape for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_pad_hole",
+    "description": "Performs pcb set_pad_hole for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_pad",
+    "description": "Performs pcb get_pad for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_pad_thermal",
+    "description": "Performs pcb set_pad_thermal for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_track",
+    "description": "Performs pcb add_track for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.remove_track",
+    "description": "Performs pcb remove_track for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.move_track",
+    "description": "Performs pcb move_track for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_track_width",
+    "description": "Performs pcb set_track_width for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_track_layer",
+    "description": "Performs pcb set_track_layer for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_track",
+    "description": "Performs pcb get_track for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_tracks",
+    "description": "Performs pcb get_tracks for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_tracks_by_net",
+    "description": "Performs pcb get_tracks_by_net for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_via",
+    "description": "Performs pcb add_via for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.remove_via",
+    "description": "Performs pcb remove_via for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.move_via",
+    "description": "Performs pcb move_via for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_via_size",
+    "description": "Performs pcb set_via_size for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_via_hole",
+    "description": "Performs pcb set_via_hole for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_via",
+    "description": "Performs pcb get_via for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_vias",
+    "description": "Performs pcb get_vias for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_zone",
+    "description": "Performs pcb add_zone for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.remove_zone",
+    "description": "Performs pcb remove_zone for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.fill_zone",
+    "description": "Performs pcb fill_zone for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.refill_all_zones",
+    "description": "Performs pcb refill_all_zones for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_zone",
+    "description": "Performs pcb get_zone for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_zone_clearance",
+    "description": "Performs pcb set_zone_clearance for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_text",
+    "description": "Performs pcb add_text for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.remove_text",
+    "description": "Performs pcb remove_text for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.move_text",
+    "description": "Performs pcb move_text for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_text_size",
+    "description": "Performs pcb set_text_size for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_dimension",
+    "description": "Performs pcb add_dimension for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_layer",
+    "description": "Performs pcb get_layer for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_layers",
+    "description": "Performs pcb get_layers for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_layer",
+    "description": "Performs pcb add_layer for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.remove_layer",
+    "description": "Performs pcb remove_layer for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_layer_color",
+    "description": "Performs pcb set_layer_color for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_layer_visibility",
+    "description": "Performs pcb set_layer_visibility for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_net",
+    "description": "Performs pcb get_net for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_nets",
+    "description": "Performs pcb get_nets for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_net_class",
+    "description": "Performs pcb set_net_class for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_net_class",
+    "description": "Performs pcb add_net_class for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_length_constraint",
+    "description": "Performs pcb add_length_constraint for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_impedance_constraint",
+    "description": "Performs pcb add_impedance_constraint for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_differential_pair_constraint",
+    "description": "Performs pcb add_differential_pair_constraint for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_length_matching_constraint",
+    "description": "Performs pcb add_length_matching_constraint for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_min_trace_width",
+    "description": "Performs pcb set_min_trace_width for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_min_clearance",
+    "description": "Performs pcb set_min_clearance for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_constraints",
+    "description": "Performs pcb get_constraints for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_board_outline",
+    "description": "Performs pcb set_board_outline for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_edge_cut",
+    "description": "Performs pcb add_edge_cut for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.remove_edge_cut",
+    "description": "Performs pcb remove_edge_cut for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_keepout",
+    "description": "Performs pcb add_keepout for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.remove_keepout",
+    "description": "Performs pcb remove_keepout for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_thermal_relief",
+    "description": "Performs pcb set_thermal_relief for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_copper_fill",
+    "description": "Performs pcb add_copper_fill for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.remove_copper_fill",
+    "description": "Performs pcb remove_copper_fill for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.ripup_track",
+    "description": "Performs pcb ripup_track for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.ripup_via",
+    "description": "Performs pcb ripup_via for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_track_solder_mask",
+    "description": "Performs pcb set_track_solder_mask for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_pad_solder_mask",
+    "description": "Performs pcb set_pad_solder_mask for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_hole",
+    "description": "Performs pcb add_hole for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.remove_hole",
+    "description": "Performs pcb remove_hole for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_restring",
+    "description": "Performs pcb set_restring for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_assembly_note",
+    "description": "Performs pcb add_assembly_note for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.remove_assembly_note",
+    "description": "Performs pcb remove_assembly_note for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_fiducial",
+    "description": "Performs pcb add_fiducial for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.remove_fiducial",
+    "description": "Performs pcb remove_fiducial for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_test_point",
+    "description": "Performs pcb add_test_point for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.remove_test_point",
+    "description": "Performs pcb remove_test_point for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_test_points",
+    "description": "Performs pcb get_test_points for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.route_auto",
+    "description": "Performs pcb route_auto for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.route_diff_pair",
+    "description": "Performs pcb route_diff_pair for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.route_selected",
+    "description": "Performs pcb route_selected for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.uncouple_tracks",
+    "description": "Performs pcb uncouple_tracks for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.merge_tracks",
+    "description": "Performs pcb merge_tracks for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.split_track",
+    "description": "Performs pcb split_track for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_route_width",
+    "description": "Performs pcb set_route_width for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_route_clearance",
+    "description": "Performs pcb set_route_clearance for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_route_layers",
+    "description": "Performs pcb get_route_layers for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_board_material",
+    "description": "Performs pcb set_board_material for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_mask_expansion",
+    "description": "Performs pcb set_mask_expansion for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_silk_expansion",
+    "description": "Performs pcb set_silk_expansion for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_copper_thickness",
+    "description": "Performs pcb set_copper_thickness for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_hole_plating",
+    "description": "Performs pcb set_hole_plating for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_solder_mask_color",
+    "description": "Performs pcb set_solder_mask_color for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_legend_font",
+    "description": "Performs pcb set_legend_font for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_footprint_center",
+    "description": "Performs pcb get_footprint_center for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.measure_distance",
+    "description": "Performs pcb measure_distance for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_polygon_points",
+    "description": "Performs pcb get_polygon_points for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_polygon_thermal",
+    "description": "Performs pcb set_polygon_thermal for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_zone_priority",
+    "description": "Performs pcb set_zone_priority for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_zone_priority",
+    "description": "Performs pcb get_zone_priority for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_layer_pair",
+    "description": "Performs pcb set_layer_pair for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_board_size",
+    "description": "Performs pcb get_board_size for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_grid_origin",
+    "description": "Performs pcb set_grid_origin for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_origin",
+    "description": "Performs pcb set_origin for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.define_net_name",
+    "description": "Performs pcb define_net_name for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.remove_net_name",
+    "description": "Performs pcb remove_net_name for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_polyline_width",
+    "description": "Performs pcb set_polyline_width for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_drill_chart",
+    "description": "Performs pcb set_drill_chart for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.request_gerber",
+    "description": "Performs pcb request_gerber for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_through_hole",
+    "description": "Performs pcb add_through_hole for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_surface_mount",
+    "description": "Performs pcb add_surface_mount for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_rounded_track",
+    "description": "Performs pcb add_rounded_track for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_arc",
+    "description": "Performs pcb add_arc for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.remove_arc",
+    "description": "Performs pcb remove_arc for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_rectangle",
+    "description": "Performs pcb add_rectangle for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.remove_rectangle",
+    "description": "Performs pcb remove_rectangle for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_circle",
+    "description": "Performs pcb add_circle for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.remove_circle",
+    "description": "Performs pcb remove_circle for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_oblong_hole",
+    "description": "Performs pcb add_oblong_hole for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_footprint_rotation",
+    "description": "Performs pcb set_footprint_rotation for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.align_footprints",
+    "description": "Performs pcb align_footprints for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.distribute_footprints",
+    "description": "Performs pcb distribute_footprints for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.arrange_board",
+    "description": "Performs pcb arrange_board for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.push_tracks",
+    "description": "Performs pcb push_tracks for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.pull_tracks",
+    "description": "Performs pcb pull_tracks for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_selected_objects",
+    "description": "Performs pcb get_selected_objects for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.select_object",
+    "description": "Performs pcb select_object for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.clear_selection",
+    "description": "Performs pcb clear_selection for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.lock_all",
+    "description": "Performs pcb lock_all for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.unlock_all",
+    "description": "Performs pcb unlock_all for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.update_board",
+    "description": "Performs pcb update_board for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.rebuild_ratsnest",
+    "description": "Performs pcb rebuild_ratsnest for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_ratsnest",
+    "description": "Performs pcb get_ratsnest for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_thermal_spoke",
+    "description": "Performs pcb set_thermal_spoke for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_thermal_angle",
+    "description": "Performs pcb set_thermal_angle for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_hatch_style",
+    "description": "Performs pcb set_hatch_style for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_zone_corner",
+    "description": "Performs pcb set_zone_corner for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_zone_fill",
+    "description": "Performs pcb set_zone_fill for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_via_thermal",
+    "description": "Performs pcb set_via_thermal for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_pad_tenting",
+    "description": "Performs pcb set_pad_tenting for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_footprint_solderpaste",
+    "description": "Performs pcb set_footprint_solderpaste for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.add_design_rule",
+    "description": "Performs pcb add_design_rule for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.remove_design_rule",
+    "description": "Performs pcb remove_design_rule for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.get_design_rules",
+    "description": "Performs pcb get_design_rules for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.set_design_rule_value",
+    "description": "Performs pcb set_design_rule_value for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.export_gerbers",
+    "description": "Performs pcb export_gerbers for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.export_drill",
+    "description": "Performs pcb export_drill for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.export_bom",
+    "description": "Performs pcb export_bom for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  },
+  {
+    "name": "pcb.export_pick_place",
+    "description": "Performs pcb export_pick_place for the KiCad design workflow.",
+    "category": "pcb",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "target": {
+          "type": "string",
+          "description": "Primary object or target"
+        },
+        "path": {
+          "type": "string",
+          "description": "Project or output path"
+        },
+        "value": {
+          "type": "number",
+          "description": "Optional numeric parameter"
+        },
+        "name": {
+          "type": "string",
+          "description": "Name of the object or item"
+        }
+      },
+      "required": [
+        "target"
+      ]
+    }
+  }
+]

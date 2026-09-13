@@ -1,0 +1,15 @@
+{
+  "component": "RK3566",
+  "generated_at": "2026-09-12T18:19:21.814486",
+  "generation_confidence": 0.9,
+  "sources": [
+    "https://example.com/datasheets/rk3566.pdf"
+  ],
+  "pinout_source": "datasheet extraction",
+  "pinout_pins": 4,
+  "package_data_source": "datasheet extraction",
+  "package": "FCBGA419",
+  "symbol_file": "RK3566.kicad_sym",
+  "footprint_file": "RK3566.kicad_mod",
+  "validation_status": "pending"
+}

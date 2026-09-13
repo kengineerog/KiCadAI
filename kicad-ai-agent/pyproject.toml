@@ -1,0 +1,8 @@
+[project]
+name = "kicad-ai-agent"
+version = "0.1.0"
+description = "AI agent for autonomous PCB design with KiCad 10"
+requires-python = ">=3.10,<3.13"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
