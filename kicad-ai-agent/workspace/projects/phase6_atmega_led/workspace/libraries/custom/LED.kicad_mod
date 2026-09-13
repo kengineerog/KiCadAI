@@ -1,0 +1,10 @@
+(footprint "LED"
+  (layer "F.Cu")
+  (descr "LED_D5.0mm BGA 1x2")
+  (attr smd)
+  (pad "A1" smd circle (at 0.0 0.0 0) (size 2.286 2.286) (layers "F.Cu" "F.Paste" "F.Mask"))
+  (pad "A2" smd circle (at 2.54 0.0 0) (size 2.286 2.286) (layers "F.Cu" "F.Paste" "F.Mask"))
+  (model "${KICAD_MODELS}/LED.step"
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1)))
+)

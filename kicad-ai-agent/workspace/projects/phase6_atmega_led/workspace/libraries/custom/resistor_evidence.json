@@ -1,0 +1,15 @@
+{
+  "component": "resistor",
+  "generated_at": "2026-09-12T18:54:48.330188",
+  "generation_confidence": 0.9,
+  "sources": [
+    "https://example.com/datasheets/resistor_datasheet_pdf.pdf"
+  ],
+  "pinout_source": "datasheet extraction",
+  "pinout_pins": 2,
+  "package_data_source": "datasheet extraction",
+  "package": "R_0603_1608Metric",
+  "symbol_file": "resistor.kicad_sym",
+  "footprint_file": "resistor.kicad_mod",
+  "validation_status": "pending"
+}

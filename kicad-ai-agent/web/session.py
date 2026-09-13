@@ -25,6 +25,7 @@ class AgentSession:
     artifacts: list[dict[str, Any]] = field(default_factory=list)
     current_project: str | None = None
     running: bool = False
+    stop_requested: bool = False
 
     def __post_init__(self):
         self.research = ResearchMCP(
@@ -73,6 +74,7 @@ class AgentSession:
             if self.running:
                 raise RuntimeError("This session is already running")
             self.running = True
+            self.stop_requested = False
             self.events.clear()
             self.artifacts.clear()
             self.current_project = project_name
@@ -85,10 +87,16 @@ class AgentSession:
                     project_name=project_name,
                     project_root=BASE_DIR / "workspace" / "projects",
                     event_callback=self.record,
+                    cancel_check=lambda: self.stop_requested,
                 )
+            except asyncio.CancelledError:
+                await self.record({"type": "status", "message": "Run stopped", "data": {"session_id": self.session_id}})
             finally:
                 self._event_sink = None
                 self.running = False
+
+    def request_stop(self):
+        self.stop_requested = True
 
 
 class SessionStore:

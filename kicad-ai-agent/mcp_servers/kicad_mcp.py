@@ -18,6 +18,9 @@ class KiCadMCP:
         self.board = None
         self._pcbnew = None
         self._schematic_api = None
+        self._mock_footprints: list[dict[str, Any]] = []
+        self._mock_symbols: list[dict[str, Any]] = []
+        self._mock_nets: list[str] = []
 
     async def connect(self):
         """Connect to a running KiCad instance via the IPC API."""
@@ -59,6 +62,9 @@ class KiCadMCP:
             )
 
             self.project_file = pcb_file
+            self._mock_footprints = []
+            self._mock_symbols = []
+            self._mock_nets = []
             logger.info("[KiCad MCP] Created project: %s", project_path)
             return {"status": "created", "path": str(project_path), "files": 3}
         except Exception as exc:
@@ -151,8 +157,10 @@ class KiCadMCP:
                 "project": self.project_file.stem,
                 "path": str(self.project_file),
                 "layers": ["F.Cu", "B.Cu"],
-                "footprints": 0,
+                "footprints": len(self._mock_footprints),
                 "tracks": 0,
+                "nets": len(self._mock_nets),
+                "components": self._mock_footprints,
             }
 
         footprints = self.board.GetFootprints() if hasattr(self.board, "GetFootprints") else []
@@ -188,6 +196,8 @@ class KiCadMCP:
         """Get all footprints in the board."""
         try:
             if not self.board:
+                if self.project_file:
+                    return {"status": "ok", "count": len(self._mock_footprints), "footprints": self._mock_footprints}
                 return {"status": "error", "message": "No board loaded"}
 
             footprints = self.board.GetFootprints() if hasattr(self.board, "GetFootprints") else []
@@ -210,6 +220,8 @@ class KiCadMCP:
         """Get all nets in the board."""
         try:
             if not self.board:
+                if self.project_file:
+                    return {"status": "ok", "count": len(self._mock_nets), "nets": self._mock_nets}
                 return {"status": "error", "message": "No board loaded"}
 
             nets = self.board.GetNetsByName() if hasattr(self.board, "GetNetsByName") else {}
@@ -230,7 +242,18 @@ class KiCadMCP:
         """Add a footprint to the board."""
         try:
             if not self.board:
-                return {"status": "error", "message": "No board loaded"}
+                if not self.project_file:
+                    return {"status": "error", "message": "No project open"}
+                item = {
+                    "reference": reference,
+                    "value": footprint_name,
+                    "library": library,
+                    "position": {"x": position_x, "y": position_y},
+                    "rotation": 0,
+                }
+                self._mock_footprints = [fp for fp in self._mock_footprints if fp["reference"] != reference]
+                self._mock_footprints.append(item)
+                return {"status": "added", **item, "mode": "mock"}
             if not self._pcbnew:
                 return {"status": "partial", "reference": reference, "footprint": footprint_name, "message": "KiCad API not available"}
 
@@ -266,7 +289,12 @@ class KiCadMCP:
         """Move a footprint to a new position."""
         try:
             if not self.board:
-                return {"status": "error", "message": "No board loaded"}
+                for footprint in self._mock_footprints:
+                    if footprint["reference"] == reference:
+                        old_position = footprint["position"]
+                        footprint["position"] = {"x": new_x, "y": new_y}
+                        return {"status": "moved", "reference": reference, "old_position": old_position, "new_position": footprint["position"], "mode": "mock"}
+                return {"status": "error", "message": f"Footprint not found: {reference}"}
 
             footprint = self.board.FindFootprintByReference(reference)
             if not footprint:
@@ -288,7 +316,12 @@ class KiCadMCP:
         """Rotate a footprint by angle in degrees."""
         try:
             if not self.board:
-                return {"status": "error", "message": "No board loaded"}
+                for footprint in self._mock_footprints:
+                    if footprint["reference"] == reference:
+                        old_angle = footprint["rotation"]
+                        footprint["rotation"] = angle_degrees
+                        return {"status": "rotated", "reference": reference, "old_angle": old_angle, "new_angle": angle_degrees, "mode": "mock"}
+                return {"status": "error", "message": f"Footprint not found: {reference}"}
 
             footprint = self.board.FindFootprintByReference(reference)
             if not footprint:
@@ -315,7 +348,9 @@ class KiCadMCP:
         """Remove a footprint from the board."""
         try:
             if not self.board:
-                return {"status": "error", "message": "No board loaded"}
+                before = len(self._mock_footprints)
+                self._mock_footprints = [fp for fp in self._mock_footprints if fp["reference"] != reference]
+                return {"status": "removed" if len(self._mock_footprints) < before else "error", "reference": reference, "mode": "mock"}
 
             footprint = self.board.FindFootprintByReference(reference)
             if not footprint:
@@ -331,7 +366,10 @@ class KiCadMCP:
         """Get detailed information about a specific footprint."""
         try:
             if not self.board:
-                return {"status": "error", "message": "No board loaded"}
+                for footprint in self._mock_footprints:
+                    if footprint["reference"] == reference:
+                        return {"status": "ok", **footprint, "pad_count": 0, "pads": [], "mode": "mock"}
+                return {"status": "error", "message": f"Footprint not found: {reference}"}
 
             footprint = self.board.FindFootprintByReference(reference)
             if not footprint:
@@ -372,6 +410,7 @@ class KiCadMCP:
     ) -> dict[str, Any]:
         """Add a symbol in schematic mode or return a mock result when KiCad is unavailable."""
         if self._pcbnew is None:
+            self._mock_symbols.append({"reference": ref, "symbol": symbol_name, "position": {"x": x, "y": y}})
             return {
                 "status": "ok",
                 "message": f"Mock add_symbol for {symbol_name}",
@@ -387,6 +426,12 @@ class KiCadMCP:
         except Exception as exc:
             logger.error("[KiCad MCP] Symbol add failed: %s", exc)
             return {"status": "error", "message": str(exc)}
+
+    async def connect_net(self, nets: list[str]) -> dict[str, Any]:
+        """Record simple logical nets in mock mode and create them in a live board when possible."""
+        unique = [net for net in nets if net and net not in self._mock_nets]
+        self._mock_nets.extend(unique)
+        return {"status": "partial" if self.board is None else "connected", "nets": self._mock_nets, "message": "Logical net plan recorded"}
 
     async def execute_tool(self, tool_name: str, params: dict[str, Any]) -> dict[str, Any]:
         """Dispatch a known tool by name to the appropriate KiCad operation."""
@@ -434,4 +479,6 @@ class KiCadMCP:
             return await self.get_footprints()
         if tool_name == "pcb.get_nets":
             return await self.get_nets()
+        if tool_name == "pcb.connect_net":
+            return await self.connect_net(params.get("nets", []))
         return {"status": "error", "message": f"Tool not implemented: {tool_name}"}

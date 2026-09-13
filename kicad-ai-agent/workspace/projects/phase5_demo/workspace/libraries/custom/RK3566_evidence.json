@@ -1,9 +1,9 @@
 {
   "component": "RK3566",
-  "generated_at": "2026-09-12T18:47:52.619532",
+  "generated_at": "2026-09-12T18:55:49.461164",
   "generation_confidence": 0.9,
   "sources": [
-    "https://example.com/datasheets/rk3566.pdf"
+    "https://example.com/datasheets/rk3566_datasheet_pdf.pdf"
   ],
   "pinout_source": "datasheet extraction",
   "pinout_pins": 4,

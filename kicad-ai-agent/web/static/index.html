@@ -36,7 +36,7 @@
       <div class="flex items-center gap-3 font-mono text-[10px] uppercase tracking-[.15em] text-[#89948a]">
         <span class="inline-flex items-center gap-2"><span class="pulse-dot"></span><span id="health">System ready</span></span>
         <span class="hidden h-4 w-px bg-[#2c332e] sm:block"></span>
-        <span>Phase 05</span>
+        <span>Phase 06</span>
       </div>
     </header>
 
@@ -78,8 +78,14 @@
             <div class="flex items-end justify-between gap-3"><label for="goal" class="mb-0">High-level goal</label><span class="font-mono text-[10px] text-[#5f6b62]">CTRL + ENTER TO RUN</span></div>
             <textarea id="goal" class="mt-2 min-h-[132px]">Research RK3566 and generate a KiCad symbol, footprint, evidence record, and project library.</textarea>
           </div>
+          <div class="mt-4 flex flex-wrap gap-2" aria-label="Quick actions">
+            <button class="quick-action" data-goal="Create a simple project with an ATmega328P and an LED that can flash. Generate any missing symbols/footprints, create the project, place the components, and connect power, ground, and the LED with a current-limiting resistor.">ATmega + LED blink</button>
+            <button class="quick-action" data-goal="Research RK3566 and generate a KiCad symbol, footprint, evidence record, and project library.">Research RK3566</button>
+            <button class="quick-action" data-goal="Create an empty KiCad project and report its board status.">Empty project</button>
+          </div>
           <div class="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center">
             <button id="run" class="primary-button inline-flex items-center justify-center gap-3"><span class="button-sigil" aria-hidden="true">→</span><span>Run agent</span><span class="ml-auto font-mono text-[10px] opacity-60">EXECUTE</span></button>
+            <button id="stop" class="secondary-button" disabled>Stop</button>
             <p id="session" class="font-mono text-[10px] uppercase tracking-[.12em] text-[#68756b]">Session / initializing</p>
           </div>
         </section>
@@ -105,6 +111,17 @@
             <div class="metric"><span>Tracks / nets</span><strong><span id="tracks">0</span> / <span id="nets">0</span></strong></div>
           </div>
           <div class="mt-4 flex items-center gap-2 font-mono text-[10px] uppercase tracking-[.13em] text-[#68756b]"><span class="tiny-check">✓</span> IPC fallback supported</div>
+          <div class="mt-5">
+            <label for="recent-project">Recent projects</label>
+            <div class="mt-2 flex gap-2">
+              <select id="recent-project"><option value="">No projects indexed</option></select>
+              <button id="open-project" class="secondary-button">Open</button>
+            </div>
+          </div>
+          <div class="mt-5 flex gap-2">
+            <button id="save-project" class="secondary-button">Save</button>
+            <button id="close-project" class="secondary-button">Close</button>
+          </div>
         </section>
 
         <section class="panel p-5 sm:p-6">

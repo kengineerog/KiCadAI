@@ -1,6 +1,7 @@
 const $ = (id) => document.getElementById(id);
 let sessionId = localStorage.getItem("kicad-ai-session") || "";
 let eventCount = 0;
+let running = false;
 
 function escapeHtml(value) {
   return String(value).replace(/[&<>"']/g, (char) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[char]));
@@ -74,11 +75,24 @@ async function refreshSession() {
     if (!payload.artifacts.length) $("artifact-list").innerHTML = `<div class="empty-state py-8"><div class="empty-icon">□</div><div class="font-medium text-[#b4beb5]">No artifacts yet</div><div class="mt-1 text-[#68756b]">Generated files will be indexed here.</div></div>`;
     payload.artifacts.forEach(addArtifact);
   }
+
+}
+
+async function loadProjects() {
+  const response = await fetch("/api/projects");
+  if (!response.ok) return;
+  const payload = await response.json();
+  $("recent-project").innerHTML = payload.projects.length
+    ? payload.projects.map((project) => `<option value="${escapeHtml(project.path)}">${escapeHtml(project.name)}</option>`).join("")
+    : `<option value="">No projects indexed</option>`;
 }
 
 async function run() {
   const button = $("run");
+  const stopButton = $("stop");
   button.disabled = true;
+  stopButton.disabled = false;
+  running = true;
   eventCount = 0;
   $("event-count").textContent = "0 events";
   $("log").innerHTML = `<div class="empty-state"><div class="empty-icon animate-pulse">◌</div><div class="font-medium text-[#b4beb5]">Agent is warming up</div><div class="mt-1 text-[#68756b]">Opening the execution channel...</div></div>`;
@@ -117,6 +131,8 @@ async function run() {
     setRunState("Error");
   } finally {
     button.disabled = false;
+    stopButton.disabled = true;
+    running = false;
   }
 }
 
@@ -124,5 +140,30 @@ loadModels().catch((error) => {
   $("model").innerHTML = `<option value="">Model catalog unavailable</option>`;
   addLog({type:"error", message: error.message, data:{}});
 });
+loadProjects();
 $("run").addEventListener("click", run);
+$("stop").addEventListener("click", async () => {
+  if (sessionId && running) await fetch(`/api/stop/${encodeURIComponent(sessionId)}`, {method: "POST"});
+});
+$("save-project").addEventListener("click", async () => {
+  if (sessionId) await fetch("/api/projects/save", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({session_id: sessionId})});
+});
+$("close-project").addEventListener("click", async () => {
+  if (sessionId) {
+    await fetch("/api/projects/close", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({session_id: sessionId})});
+    await refreshSession();
+  }
+});
+$("open-project").addEventListener("click", async () => {
+  const projectPath = $("recent-project").value;
+  if (!sessionId || !projectPath) return;
+  await fetch("/api/projects/open", {method: "POST", headers: {"Content-Type": "application/json"}, body: JSON.stringify({session_id: sessionId, project_path: projectPath})});
+  await refreshSession();
+});
+document.querySelectorAll(".quick-action").forEach((button) => {
+  button.addEventListener("click", () => {
+    $("goal").value = button.dataset.goal;
+    $("goal").focus();
+  });
+});
 $("goal").addEventListener("keydown", (event) => { if ((event.ctrlKey || event.metaKey) && event.key === "Enter") run(); });

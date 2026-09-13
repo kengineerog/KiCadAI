@@ -11,7 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, HTMLResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 
-from web.schemas import GoalRequest, InstallRequest, ModelInfo, SessionInfo
+from web.schemas import GoalRequest, InstallRequest, ModelInfo, ProjectRequest, SessionInfo
 from web.session import BASE_DIR, SessionStore
 
 logging.basicConfig(level=os.getenv("LOG_LEVEL", "INFO"))
@@ -124,6 +124,55 @@ async def run_goal(request: GoalRequest, x_session_id: str | None = Header(defau
                 task.cancel()
 
     return StreamingResponse(event_stream(), media_type="text/event-stream", headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"})
+
+
+@app.post("/api/stop/{session_id}")
+async def stop_run(session_id: str):
+    session = store.get(session_id)
+    if not session:
+        raise HTTPException(status_code=404, detail="Session not found")
+    session.request_stop()
+    return {"status": "stopping", "session_id": session_id}
+
+
+@app.get("/api/projects")
+async def list_projects():
+    projects_dir = BASE_DIR / "workspace" / "projects"
+    projects_dir.mkdir(parents=True, exist_ok=True)
+    projects = []
+    for path in sorted(projects_dir.iterdir(), key=lambda item: item.stat().st_mtime, reverse=True):
+        if path.is_dir() and any(path.glob("*.kicad_pcb")):
+            projects.append({"name": path.name, "path": str(path), "updated_at": path.stat().st_mtime})
+    return {"projects": projects}
+
+
+@app.post("/api/projects/open")
+async def open_project(request: ProjectRequest):
+    session = store.get(request.session_id)
+    if not session or not request.project_path:
+        raise HTTPException(status_code=404, detail="Session or project path not found")
+    result = await session.kicad.open_project(str(workspace_path(request.project_path)))
+    if result.get("status") == "opened":
+        session.current_project = Path(request.project_path).name
+    return result
+
+
+@app.post("/api/projects/save")
+async def save_project(request: ProjectRequest):
+    session = store.get(request.session_id)
+    if not session:
+        raise HTTPException(status_code=404, detail="Session not found")
+    return await session.kicad.save_project()
+
+
+@app.post("/api/projects/close")
+async def close_project(request: ProjectRequest):
+    session = store.get(request.session_id)
+    if not session:
+        raise HTTPException(status_code=404, detail="Session not found")
+    result = await session.kicad.close_project()
+    session.current_project = None
+    return result
 
 
 @app.get("/api/session/{session_id}", response_model=SessionInfo)

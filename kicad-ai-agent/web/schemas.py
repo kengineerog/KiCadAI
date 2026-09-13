@@ -36,3 +36,9 @@ class InstallRequest(BaseModel):
     session_id: str
     component: str
     project_path: str | None = None
+
+
+class ProjectRequest(BaseModel):
+    session_id: str
+    project_name: str | None = Field(default=None, pattern=r"^[A-Za-z0-9_-]{1,64}$")
+    project_path: str | None = None
