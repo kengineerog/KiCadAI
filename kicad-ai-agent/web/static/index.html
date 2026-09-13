@@ -3,41 +3,123 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KiCad AI // Control Room</title>
+  <meta name="theme-color" content="#111311">
+  <title>KiCad AI / Control Room</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Manrope", "ui-sans-serif", "system-ui"],
+            mono: ["JetBrains Mono", "ui-monospace", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/static/style.css">
 </head>
-<body>
-  <div class="scanline"></div>
-  <main class="shell">
-    <header class="topbar">
-      <div class="brand"><span class="brand-mark">K</span><div><p class="eyebrow">AUTONOMOUS PCB SYSTEMS</p><h1>KICAD AI <span>// CONTROL ROOM</span></h1></div></div>
-      <div class="connection"><span class="dot"></span><span id="health">SYSTEM READY</span><span class="mono">v0.5</span></div>
+<body class="min-h-screen bg-[#111311] text-[#e7ebe2] antialiased">
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+  <div class="shell relative mx-auto max-w-[1540px] px-4 py-4 sm:px-6 lg:px-8">
+    <header class="topbar flex flex-col gap-4 border-b border-[#2c332e] pb-4 sm:flex-row sm:items-center sm:justify-between">
+      <div class="flex items-center gap-3">
+        <div class="brand-mark grid h-10 w-10 place-items-center bg-[#d8f56a] text-lg font-extrabold text-[#111311]">K</div>
+        <div>
+          <div class="font-mono text-[10px] uppercase tracking-[.18em] text-[#89948a]">Autonomous PCB systems</div>
+          <h1 class="mt-0.5 text-sm font-bold uppercase tracking-[.18em] text-[#f0f2e9]">KiCad AI <span class="font-normal text-[#718078]">/ Control room</span></h1>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 font-mono text-[10px] uppercase tracking-[.15em] text-[#89948a]">
+        <span class="inline-flex items-center gap-2"><span class="pulse-dot"></span><span id="health">System ready</span></span>
+        <span class="hidden h-4 w-px bg-[#2c332e] sm:block"></span>
+        <span>Phase 05</span>
+      </div>
     </header>
-    <section class="hero">
-      <div><p class="eyebrow amber">MISSION CONSOLE / PHASE 05</p><h2>Turn intent into<br><em>board reality.</em></h2><p class="lede">Research components, synthesize libraries, and drive KiCad from one live execution surface.</p></div>
-      <div class="hero-stat"><span class="mono">TOOLS ONLINE</span><strong>541</strong><span>DISCOVERABLE OPERATIONS</span></div>
+
+    <section class="hero grid gap-8 py-10 lg:grid-cols-[1fr_auto] lg:items-end lg:py-16">
+      <div>
+        <div class="font-mono text-[10px] uppercase tracking-[.2em] text-[#b6d65a]">Mission console / live build surface</div>
+        <h2 class="mt-4 max-w-4xl text-4xl font-semibold leading-[.98] tracking-[-.06em] text-[#f0f2e9] sm:text-6xl lg:text-7xl">From intent to<br><span class="text-[#d8f56a]">board reality.</span></h2>
+        <p class="mt-5 max-w-xl text-sm leading-6 text-[#9da89f] sm:text-base">Research components, synthesize KiCad libraries, and keep every tool call visible while the agent works.</p>
+      </div>
+      <div class="hidden border-l border-[#899f45] pl-5 lg:block">
+        <div class="font-mono text-[10px] uppercase tracking-[.16em] text-[#89948a]">Discoverable operations</div>
+        <div class="mt-2 text-5xl font-semibold tracking-[-.06em] text-[#f0c36c]">541</div>
+        <div class="font-mono text-[10px] uppercase tracking-[.16em] text-[#89948a]">Tools online</div>
+      </div>
     </section>
-    <section class="workspace-grid">
-      <div class="panel mission">
-        <div class="panel-head"><span class="panel-kicker">01 / MISSION INPUT</span><span class="live-chip">LIVE AGENT</span></div>
-        <label for="model">MODEL ROUTE</label><select id="model"></select>
-        <div class="row"><div><label for="temperature">TEMPERATURE</label><input id="temperature" type="number" min="0" max="2" step="0.1" value="0.3"></div><div><label for="project">PROJECT ID</label><input id="project" placeholder="auto-generated"></div></div>
-        <label for="goal">HIGH-LEVEL GOAL</label>
-        <textarea id="goal">Research RK3566 and generate a KiCad symbol, footprint, evidence record, and project library.</textarea>
-        <button id="run"><span class="button-sigil">↗</span> RUN AGENT <span class="shortcut">CTRL ↵</span></button>
-        <p id="session" class="session-line">SESSION // initializing</p>
+
+    <main class="grid gap-4 xl:grid-cols-[minmax(0,1.55fr)_minmax(340px,.85fr)]">
+      <div class="space-y-4">
+        <section class="panel p-5 sm:p-6">
+          <div class="mb-6 flex flex-wrap items-center justify-between gap-3 border-b border-[#2c332e] pb-4">
+            <div><div class="section-number">01</div><h3 class="mt-1 text-base font-semibold text-[#f0f2e9]">Mission input</h3></div>
+            <span class="status-chip"><span class="pulse-dot"></span> Live agent</span>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-[1.35fr_.65fr]">
+            <div>
+              <label for="model">Model route</label>
+              <select id="model"></select>
+            </div>
+            <div>
+              <label for="temperature">Temperature</label>
+              <input id="temperature" type="number" min="0" max="2" step="0.1" value="0.3">
+            </div>
+          </div>
+          <div class="mt-4">
+            <label for="project">Project id <span class="font-normal normal-case tracking-normal text-[#5f6b62]">(optional)</span></label>
+            <input id="project" placeholder="Auto-generated from session">
+          </div>
+          <div class="mt-5">
+            <div class="flex items-end justify-between gap-3"><label for="goal" class="mb-0">High-level goal</label><span class="font-mono text-[10px] text-[#5f6b62]">CTRL + ENTER TO RUN</span></div>
+            <textarea id="goal" class="mt-2 min-h-[132px]">Research RK3566 and generate a KiCad symbol, footprint, evidence record, and project library.</textarea>
+          </div>
+          <div class="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <button id="run" class="primary-button inline-flex items-center justify-center gap-3"><span class="button-sigil">↗</span><span>Run agent</span><span class="ml-auto font-mono text-[10px] opacity-60">EXECUTE</span></button>
+            <p id="session" class="font-mono text-[10px] uppercase tracking-[.12em] text-[#68756b]">Session / initializing</p>
+          </div>
+        </section>
+
+        <section class="panel p-5 sm:p-6">
+          <div class="mb-5 flex flex-wrap items-center justify-between gap-3 border-b border-[#2c332e] pb-4">
+            <div><div class="section-number">02</div><h3 class="mt-1 text-base font-semibold text-[#f0f2e9]">Execution stream</h3></div>
+            <div class="flex items-center gap-3"><span id="event-count" class="font-mono text-[10px] uppercase tracking-[.13em] text-[#68756b]">0 events</span><span id="run-state" class="state-chip">Standby</span></div>
+          </div>
+          <div id="log" class="log" aria-live="polite">
+            <div class="empty-state"><div class="empty-icon">⌁</div><div class="font-medium text-[#b4beb5]">Awaiting mission parameters</div><div class="mt-1 text-[#68756b]">Research, synthesis, and project events will appear here.</div></div>
+          </div>
+        </section>
       </div>
-      <div class="panel telemetry">
-        <div class="panel-head"><span class="panel-kicker">02 / TELEMETRY</span><span id="run-state" class="state">STANDBY</span></div>
-        <div id="log" class="log" aria-live="polite"><div class="empty-log">Awaiting mission parameters<span>Execution events will appear here in real time.</span></div></div>
-      </div>
-      <aside class="rail">
-        <div class="panel status-card"><div class="panel-head"><span class="panel-kicker">03 / KICAD LINK</span><span id="kicad-dot" class="status-dot"></span></div><div id="kicad-status" class="big-status">NOT CONNECTED</div><div class="metric"><span>PROJECT</span><strong id="current-project">—</strong></div><div class="metric"><span>FOOTPRINTS</span><strong id="footprints">0</strong></div><div class="metric"><span>TRACKS / NETS</span><strong><span id="tracks">0</span> / <span id="nets">0</span></strong></div></div>
-        <div class="panel artifacts"><div class="panel-head"><span class="panel-kicker">04 / ARTIFACTS</span><span id="artifact-count">0 FILES</span></div><div id="artifact-list" class="artifact-list"><div class="empty-log">No artifacts yet<span>Generated files will be indexed here.</span></div></div></div>
+
+      <aside class="space-y-4">
+        <section class="panel p-5 sm:p-6">
+          <div class="mb-5 flex items-center justify-between border-b border-[#2c332e] pb-4"><div><div class="section-number">03</div><h3 class="mt-1 text-base font-semibold">KiCad link</h3></div><span id="kicad-dot" class="status-ring"></span></div>
+          <div id="kicad-status" class="text-2xl font-semibold tracking-[-.04em] text-[#d8f56a]">Not connected</div>
+          <div class="mt-5 divide-y divide-[#2c332e] border-y border-[#2c332e]">
+            <div class="metric"><span>Current project</span><strong id="current-project">—</strong></div>
+            <div class="metric"><span>Footprints</span><strong id="footprints">0</strong></div>
+            <div class="metric"><span>Tracks / nets</span><strong><span id="tracks">0</span> / <span id="nets">0</span></strong></div>
+          </div>
+          <div class="mt-4 flex items-center gap-2 font-mono text-[10px] uppercase tracking-[.13em] text-[#68756b]"><span class="tiny-check">✓</span> IPC fallback supported</div>
+        </section>
+
+        <section class="panel p-5 sm:p-6">
+          <div class="mb-5 flex items-center justify-between border-b border-[#2c332e] pb-4"><div><div class="section-number">04</div><h3 class="mt-1 text-base font-semibold">Artifacts</h3></div><span id="artifact-count" class="font-mono text-[10px] uppercase tracking-[.13em] text-[#68756b]">0 files</span></div>
+          <div id="artifact-list" class="artifact-list"><div class="empty-state py-8"><div class="empty-icon">□</div><div class="font-medium text-[#b4beb5]">No artifacts yet</div><div class="mt-1 text-[#68756b]">Generated files will be indexed here.</div></div></div>
+        </section>
       </aside>
-    </section>
-    <footer><span>OMNIROUTE / OPENAI COMPATIBLE</span><span>RESEARCH → SYNTHESIS → FABRICATION</span><span class="mono">LOCAL SESSION ENCRYPTION: OFFLINE</span></footer>
-  </main>
+    </main>
+
+    <footer class="flex flex-col gap-2 border-t border-[#2c332e] py-5 font-mono text-[9px] uppercase tracking-[.15em] text-[#58655c] sm:flex-row sm:items-center sm:justify-between">
+      <span>Omniroute / OpenAI compatible</span><span>Research → synthesis → fabrication</span><span>Local session / offline safe</span>
+    </footer>
+  </div>
   <script src="/static/app.js"></script>
 </body>
 </html>
